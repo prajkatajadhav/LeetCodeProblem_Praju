@@ -31,8 +31,9 @@ Only one valid answer exists.
  
 
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity? */
+/*Slotion = Target =num[i]+num[j]
+ * num[j]=Target +num[i] */
 public class TwoSum {
-    //public static void main(String[] args) {
         public int[] twoSum(int[] nums, int target) {
             for(int i=0;i<nums.length;i++){
             for (int j=i+1;j<nums.length;j++){
