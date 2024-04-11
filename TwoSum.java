@@ -1,4 +1,7 @@
 package LeetCodeProblem_Praju;
+
+import java.util.Arrays;
+
 /*Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -32,14 +35,27 @@ Only one valid answer exists.
 
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity? */
 /*Slotion = Target =num[i]+num[j]
- * num[j]=Target +num[i] */
+ * num[j]=Target +num[i]
+ */
 public class TwoSum {
-        public int[] twoSum(int[] nums, int target) {
+    public static void main(String[] args) {
+        int[] nums ={2,3,4,6,1};
+        int target = 6;
+       
+       System.out.println(Arrays.toString(nums));
+       
+      
+        
+    }
+        public static int[]  twoSum(int[] nums, int target) {
             for(int i=0;i<nums.length;i++){
             for (int j=i+1;j<nums.length;j++){
             if (nums[j]==target-nums[i]){
                 return new int[]{i,j};
+               // System.out.print(int[]{i,j});
+
             }
+            
             }
             }
             return null;

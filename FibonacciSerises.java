@@ -1,5 +1,10 @@
 package LeetCodeProblem_Praju;
-/*Question find fibonacc series  */
+/*Question find fibonacc series 
+ * 0,1,1,2,3
+ * 0+1=1
+ * 1+1=2
+ * 2+1=3
+ */
 /*solution :a=0;b=1;count= 2;
  * while (count<2)
  * temp=b;
